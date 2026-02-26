@@ -16,10 +16,10 @@ export default function Leaderboard() {
         <div className="max-w-5xl mx-auto p-6 space-y-12">
             <header className="text-center space-y-4">
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-yellow-500/10 text-yellow-500 text-xs font-black uppercase tracking-[0.2em]">
-                    <Crown size={14} /> Global Rankings
+                    <Trophy size={14} /> Global Rankings
                 </div>
-                <h1 className="text-5xl font-black tracking-tighter">Hall of <span className="gradient-text">Legends</span></h1>
-                <p className="text-muted-foreground text-lg max-w-xl mx-auto">The elite 1%. Your status is determined by your points earned in tests and daily practice.</p>
+                <h1 className="text-5xl font-black tracking-tighter">Global <span className="gradient-text">Leaderboard</span></h1>
+                <p className="text-muted-foreground text-lg max-w-xl mx-auto">Track your standing among top JEE aspirants. Your rank is based on points earned from tests and daily practice.</p>
             </header>
 
             {/* Podium */}
@@ -47,7 +47,7 @@ export default function Leaderboard() {
                         <div className="w-32 h-32 rounded-[40px] bg-yellow-500/20 flex items-center justify-center text-4xl font-black border-4 border-yellow-500 shadow-[0_0_50px_rgba(234,179,8,0.2)] group-hover:scale-110 transition-transform">
                             {leaders[0].avatar}
                         </div>
-                        <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-yellow-500 text-black px-4 py-1.5 rounded-xl text-xs font-black">CHAMPION</div>
+                        <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-yellow-500 text-black px-4 py-1.5 rounded-xl text-xs font-black">1ST</div>
                     </div>
                     <div className="text-center">
                         <h3 className="text-xl font-bold">{leaders[0].name}</h3>

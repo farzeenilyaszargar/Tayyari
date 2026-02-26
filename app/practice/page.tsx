@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle2, Circle, Clock, Flame, ChevronRight, PlayCircle } from "lucide-react";
+import { CheckCircle2, Circle, Clock, Flame, ChevronRight, PlayCircle, Zap } from "lucide-react";
 
 const problems = [
     {
@@ -48,7 +48,7 @@ export default function Practice() {
                         onClick={() => setActiveTab("daily")}
                         className={`px-6 py-2 rounded-xl text-sm font-semibold transition-all ${activeTab === "daily" ? "bg-primary text-white shadow-lg shadow-primary/20" : "hover:bg-white/5 text-muted-foreground"}`}
                     >
-                        Daily Quest
+                        Daily Tasks
                     </button>
                     <button
                         onClick={() => setActiveTab("archive")}
@@ -109,8 +109,8 @@ export default function Practice() {
                             <div className="flex justify-between items-start mb-4">
                                 <div className="flex items-center gap-3">
                                     <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${prob.subject === "Physics" ? "bg-blue-500/10 text-blue-400" :
-                                            prob.subject === "Maths" ? "bg-purple-500/10 text-purple-400" :
-                                                "bg-green-500/10 text-green-400"
+                                        prob.subject === "Maths" ? "bg-purple-500/10 text-purple-400" :
+                                            "bg-green-500/10 text-green-400"
                                         }`}>
                                         {prob.subject}
                                     </span>

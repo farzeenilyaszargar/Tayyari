@@ -26,7 +26,7 @@ export default function HeroSection() {
 
                     <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[0.9]">
                         Crack <span className="gradient-text italic">JEE</span> <br />
-                        <span className="text-white">With Precision.</span>
+                        <span className="text-foreground">With Precision.</span>
                     </h1>
 
                     <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
@@ -37,7 +37,7 @@ export default function HeroSection() {
                         <Link href="/dashboard" className="bg-primary text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-primary/20 hover:scale-105 transition-transform flex items-center gap-2 group">
                             Get Started Now <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </Link>
-                        <button className="glass text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/10 transition-colors">
+                        <button className="glass text-foreground px-8 py-4 rounded-2xl font-bold text-lg hover:bg-foreground/10 transition-colors">
                             View Syllabus
                         </button>
                     </div>
@@ -66,8 +66,8 @@ export default function HeroSection() {
                                 <Zap size={40} className="text-primary" />
                             </div>
                             <h2 className="text-3xl font-bold text-center">Fast-Track Your <br />Rank Today</h2>
-                            <button className="w-full bg-white text-black py-4 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-white/90 transition-all">
-                                <Image src="/google.png" alt="Google" width={24} height={24} />
+                            <button className="w-full bg-foreground text-background py-4 rounded-2xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-all">
+                                <Image src="/google.png" alt="Google" width={24} height={24} className="dark:invert-0 invert" />
                                 Continue with Google
                             </button>
                             <p className="text-xs text-muted-foreground text-center">
@@ -82,6 +82,16 @@ export default function HeroSection() {
 
                     {/* Decorative Rings */}
                     <div className="absolute inset-0 border-[40px] border-primary/5 rounded-full scale-125 -z-10 animate-spin-slow"></div>
+
+                    {/* Floating Live Players Bubble */}
+                    <motion.div
+                        animate={{ y: [0, -15, 0] }}
+                        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                        className="absolute -right-8 top-1/2 glass px-4 py-2 rounded-2xl flex items-center gap-2 border-primary/30 shadow-[0_0_20px_rgba(59,130,246,0.2)]"
+                    >
+                        <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                        <span className="text-[10px] font-black uppercase tracking-widest leading-none">12,402 Students Online</span>
+                    </motion.div>
                 </motion.div>
             </div>
         </section>
