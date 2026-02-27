@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+<<<<<<< HEAD
 import "./global.css";
 import { Inter } from "next/font/google";
 import Header from "@/components/header";
@@ -6,10 +7,18 @@ import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
+=======
+import { Inter } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+>>>>>>> c260406 (made basic)
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Tayyari | Crack JEE with AI",
   description: "Get AI-generated test papers, instant ranks, and personalized study materials.",
   keywords: ["jee", "iit", "test", "ai", "study materials"],
@@ -27,6 +36,17 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
           </main>
           <Footer />
         </ThemeProvider>
+=======
+  title: "Tayyari - Serious JEE Preparation",
+  description: "The ultimate platform for JEE aspirants. Take exams, get rank predictions, analyze weak points, and climb the leaderboard.",
+};
+
+export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
+  return (
+    <html lang="en">
+      <body className={`${inter.variable} font-sans`}>
+        {children}
+>>>>>>> c260406 (made basic)
       </body>
     </html>
   );

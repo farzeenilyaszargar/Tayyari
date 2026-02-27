@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tayyari
 
 Tayyari is a platform for JEE aspirants to prepare for the exam with AI-generated test papers, instant ranks, and personalized study materials.
@@ -9,3 +10,8 @@ Tayyari is a platform for JEE aspirants to prepare for the exam with AI-generate
 - Leaderboard
 - Resources
 
+=======
+# Tayyari 
+
+website availible at [Tayyari](https://tayyari.online)
+>>>>>>> c260406 (made basic)

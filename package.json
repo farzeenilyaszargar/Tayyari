@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
+=======
+    "dev": "next dev",
+    "build": "next build",
+>>>>>>> c260406 (made basic)
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "framer-motion": "^12.23.22",
     "lucide-react": "^0.575.0",
     "next": "15.5.4",
@@ -20,12 +26,23 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+=======
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+>>>>>>> c260406 (made basic)
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
+<<<<<<< HEAD
     "eslint-config-next": "15.5.4",
     "tailwindcss": "^4",
+=======
+    "eslint-config-next": "16.1.6",
+>>>>>>> c260406 (made basic)
     "typescript": "^5"
   }
 }
